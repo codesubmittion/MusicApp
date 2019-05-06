@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<div class="row">
+				<% @musics.each do |music| %>
+					<%=attachment_img_tag music, :image, :size=>"600×600" %>
+					<%=link_to music.name, music_path(music) %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
